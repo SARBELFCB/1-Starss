@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Solution>
+	<Configurations>
+		<BuildType Name="Debug"/>
+		<BuildType Name="Release"/>
+		<BuildType Name="MinSizeRel"/>
+		<BuildType Name="RelWithDebInfo"/>
+		<Platform Name="x64"/>
+	</Configurations>
+	<Project Path="1Star.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="ee5bc2c1-7bc9-30f3-91a9-c5ed2cde7725">
+		<BuildDependency Project="bindings/GeodeBindings.vcxproj"/>
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="_deps/arc-build/arc.vcxproj"/>
+		<BuildDependency Project="_deps/asp2-build/asp.vcxproj"/>
+		<BuildDependency Project="_deps/fmt-build/fmt.vcxproj"/>
+	</Project>
+	<Project Path="1Star_PACKAGE.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="08768d38-2e80-3242-bc0e-c71b6b7ad2de">
+		<BuildDependency Project="1Star.vcxproj"/>
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="ALL_BUILD.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="4528bb19-38e7-3e5d-a854-9f3e65d7e664" DefaultStartup="true">
+		<BuildDependency Project="1Star.vcxproj"/>
+		<BuildDependency Project="1Star_PACKAGE.vcxproj"/>
+		<BuildDependency Project="bindings/GeodeBindings.vcxproj"/>
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="bindings/GeodeBindings.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="0321e27b-4daf-3f4e-abee-ebfb473d9e23">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="_deps/arc-build/arc.vcxproj"/>
+		<BuildDependency Project="_deps/asp2-build/asp.vcxproj"/>
+		<BuildDependency Project="_deps/fmt-build/fmt.vcxproj"/>
+	</Project>
+	<Project Path="INSTALL.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="da71afa2-9148-3b67-977d-08d3937d7887">
+		<BuildDependency Project="ALL_BUILD.vcxproj"/>
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<Build Solution="Debug|*" Project="false"/>
+		<Build Solution="Release|*" Project="false"/>
+		<Build Solution="MinSizeRel|*" Project="false"/>
+		<Build Solution="RelWithDebInfo|*" Project="false"/>
+	</Project>
+	<Project Path="ZERO_CHECK.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="643b83a2-0f51-347b-857d-a0e0aa07cefc"/>
+	<Project Path="_deps/arc-build/arc.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="f0ba88d6-ef73-3e78-8885-fae6bee964c1">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="_deps/asp2-build/asp.vcxproj"/>
+		<BuildDependency Project="_deps/fmt-build/fmt.vcxproj"/>
+	</Project>
+	<Project Path="_deps/asp2-build/asp.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="0e9b0275-deae-39e5-b7ac-cc90eade9d5e">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="_deps/fmt-build/fmt.vcxproj"/>
+	</Project>
+	<Project Path="_deps/fmt-build/fmt.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="8eabc660-f2ba-3b5a-8494-d2120fdfe30c">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+</Solution>

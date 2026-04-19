@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EE5BC2C1-7BC9-30F3-91A9-C5ED2CDE7725}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>1Star</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Usuario\1 Star\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">1Star.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sarbelfcb.1-star</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Usuario\1 Star\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">1Star.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sarbelfcb.1-star</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Usuario\1 Star\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">1Star.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sarbelfcb.1-star</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Usuario\1 Star\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">1Star.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sarbelfcb.1-star</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\1 Star\build\geode-deps;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\cocos\include;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\cocos\extensions;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\fmod;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/Usuario/1 Star/build/bindings/bindings" /external:I "C:/Users/Usuario/1 Star/build/_deps/bindings-src/bindings/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/fmt-src/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/tuliphook-src/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/result-src/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/json-src/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/nontype_functional-src/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/asp2-src/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/arc-src/include" /bigobj /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/Users/Usuario/1 Star/build/CMakeFiles/1Star.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>C:/Users/Usuario/1 Star/build/1Star.dir/Debug//cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;GEODE_MOD_ID="sarbelfcb.1-star";PROJECT_NAME=1Star;NOMINMAX;GEODE_GD_VERSION=2.2081;GEODE_COMP_GD_VERSION=22081;GEODE_GD_VERSION_STRING="2.2081";_HAS_ITERATOR_DEBUGGING=0;MAT_JSON_DYNAMIC=1;ARC_FEATURE_TIME=1;CMAKE_INTDIR="Debug";_1Star_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;GEODE_MOD_ID=\"sarbelfcb.1-star\";PROJECT_NAME=1Star;NOMINMAX;GEODE_GD_VERSION=2.2081;GEODE_COMP_GD_VERSION=22081;GEODE_GD_VERSION_STRING=\"2.2081\";_HAS_ITERATOR_DEBUGGING=0;MAT_JSON_DYNAMIC=1;ARC_FEATURE_TIME=1;CMAKE_INTDIR=\"Debug\";_1Star_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\1 Star\build\geode-deps;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\cocos\include;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\cocos\extensions;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\fmod;C:\Users\Usuario\1 Star\build\bindings\bindings;C:\Users\Usuario\1 Star\build\_deps\bindings-src\bindings\include;C:\Users\Usuario\1 Star\build\_deps\fmt-src\include;C:\Users\Usuario\1 Star\build\_deps\tuliphook-src\include;C:\Users\Usuario\1 Star\build\_deps\result-src\include;C:\Users\Usuario\1 Star\build\_deps\json-src\include;C:\Users\Usuario\1 Star\build\_deps\nontype_functional-src\include;C:\Users\Usuario\1 Star\build\_deps\asp2-src\include;C:\Users\Usuario\1 Star\build\_deps\arc-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\1 Star\build\geode-deps;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\cocos\include;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\cocos\extensions;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\fmod;C:\Users\Usuario\1 Star\build\bindings\bindings;C:\Users\Usuario\1 Star\build\_deps\bindings-src\bindings\include;C:\Users\Usuario\1 Star\build\_deps\fmt-src\include;C:\Users\Usuario\1 Star\build\_deps\tuliphook-src\include;C:\Users\Usuario\1 Star\build\_deps\result-src\include;C:\Users\Usuario\1 Star\build\_deps\json-src\include;C:\Users\Usuario\1 Star\build\_deps\nontype_functional-src\include;C:\Users\Usuario\1 Star\build\_deps\asp2-src\include;C:\Users\Usuario\1 Star\build\_deps\arc-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\link\win64\libcocos2d.lib;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\link\win64\libExtensions.lib;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\link\win64\glew32.lib;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\link\win64\fmod.lib;opengl32.lib;delayimp.lib;ws2_32.lib;bindings\Debug\GeodeBindings.lib;_deps\arc-build\Debug\arc.lib;_deps\asp2-build\Debug\asp.lib;_deps\fmt-build\Debug\fmtd.lib;C:\Users\Usuario\AppData\Local\GeodeSDK\bin\5.6.1\Geode.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/Usuario/AppData/Local/GeodeSDK/loader/include/link;C:/Users/Usuario/AppData/Local/GeodeSDK/loader/include/link/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/Usuario/1 Star/build/Debug/sarbelfcb.1-star.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/Usuario/1 Star/build/Debug/sarbelfcb.1-star.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\1 Star\build\geode-deps;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\cocos\include;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\cocos\extensions;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\fmod;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/Usuario/1 Star/build/bindings/bindings" /external:I "C:/Users/Usuario/1 Star/build/_deps/bindings-src/bindings/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/fmt-src/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/tuliphook-src/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/result-src/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/json-src/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/nontype_functional-src/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/asp2-src/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/arc-src/include" /bigobj /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/Users/Usuario/1 Star/build/CMakeFiles/1Star.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>C:/Users/Usuario/1 Star/build/1Star.dir/Release//cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GEODE_MOD_ID="sarbelfcb.1-star";PROJECT_NAME=1Star;NOMINMAX;GEODE_GD_VERSION=2.2081;GEODE_COMP_GD_VERSION=22081;GEODE_GD_VERSION_STRING="2.2081";_HAS_ITERATOR_DEBUGGING=0;MAT_JSON_DYNAMIC=1;ARC_FEATURE_TIME=1;CMAKE_INTDIR="Release";_1Star_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GEODE_MOD_ID=\"sarbelfcb.1-star\";PROJECT_NAME=1Star;NOMINMAX;GEODE_GD_VERSION=2.2081;GEODE_COMP_GD_VERSION=22081;GEODE_GD_VERSION_STRING=\"2.2081\";_HAS_ITERATOR_DEBUGGING=0;MAT_JSON_DYNAMIC=1;ARC_FEATURE_TIME=1;CMAKE_INTDIR=\"Release\";_1Star_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\1 Star\build\geode-deps;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\cocos\include;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\cocos\extensions;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\fmod;C:\Users\Usuario\1 Star\build\bindings\bindings;C:\Users\Usuario\1 Star\build\_deps\bindings-src\bindings\include;C:\Users\Usuario\1 Star\build\_deps\fmt-src\include;C:\Users\Usuario\1 Star\build\_deps\tuliphook-src\include;C:\Users\Usuario\1 Star\build\_deps\result-src\include;C:\Users\Usuario\1 Star\build\_deps\json-src\include;C:\Users\Usuario\1 Star\build\_deps\nontype_functional-src\include;C:\Users\Usuario\1 Star\build\_deps\asp2-src\include;C:\Users\Usuario\1 Star\build\_deps\arc-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\1 Star\build\geode-deps;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\cocos\include;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\cocos\extensions;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\fmod;C:\Users\Usuario\1 Star\build\bindings\bindings;C:\Users\Usuario\1 Star\build\_deps\bindings-src\bindings\include;C:\Users\Usuario\1 Star\build\_deps\fmt-src\include;C:\Users\Usuario\1 Star\build\_deps\tuliphook-src\include;C:\Users\Usuario\1 Star\build\_deps\result-src\include;C:\Users\Usuario\1 Star\build\_deps\json-src\include;C:\Users\Usuario\1 Star\build\_deps\nontype_functional-src\include;C:\Users\Usuario\1 Star\build\_deps\asp2-src\include;C:\Users\Usuario\1 Star\build\_deps\arc-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\link\win64\libcocos2d.lib;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\link\win64\libExtensions.lib;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\link\win64\glew32.lib;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\link\win64\fmod.lib;opengl32.lib;delayimp.lib;ws2_32.lib;bindings\Release\GeodeBindings.lib;_deps\arc-build\Release\arc.lib;_deps\asp2-build\Release\asp.lib;_deps\fmt-build\Release\fmt.lib;C:\Users\Usuario\AppData\Local\GeodeSDK\bin\5.6.1\Geode.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/Usuario/AppData/Local/GeodeSDK/loader/include/link;C:/Users/Usuario/AppData/Local/GeodeSDK/loader/include/link/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/Usuario/1 Star/build/Release/sarbelfcb.1-star.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/Usuario/1 Star/build/Release/sarbelfcb.1-star.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\1 Star\build\geode-deps;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\cocos\include;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\cocos\extensions;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\fmod;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/Usuario/1 Star/build/bindings/bindings" /external:I "C:/Users/Usuario/1 Star/build/_deps/bindings-src/bindings/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/fmt-src/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/tuliphook-src/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/result-src/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/json-src/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/nontype_functional-src/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/asp2-src/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/arc-src/include" /bigobj /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/Users/Usuario/1 Star/build/CMakeFiles/1Star.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>C:/Users/Usuario/1 Star/build/1Star.dir/MinSizeRel//cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GEODE_MOD_ID="sarbelfcb.1-star";PROJECT_NAME=1Star;NOMINMAX;GEODE_GD_VERSION=2.2081;GEODE_COMP_GD_VERSION=22081;GEODE_GD_VERSION_STRING="2.2081";_HAS_ITERATOR_DEBUGGING=0;MAT_JSON_DYNAMIC=1;ARC_FEATURE_TIME=1;CMAKE_INTDIR="MinSizeRel";_1Star_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GEODE_MOD_ID=\"sarbelfcb.1-star\";PROJECT_NAME=1Star;NOMINMAX;GEODE_GD_VERSION=2.2081;GEODE_COMP_GD_VERSION=22081;GEODE_GD_VERSION_STRING=\"2.2081\";_HAS_ITERATOR_DEBUGGING=0;MAT_JSON_DYNAMIC=1;ARC_FEATURE_TIME=1;CMAKE_INTDIR=\"MinSizeRel\";_1Star_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\1 Star\build\geode-deps;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\cocos\include;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\cocos\extensions;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\fmod;C:\Users\Usuario\1 Star\build\bindings\bindings;C:\Users\Usuario\1 Star\build\_deps\bindings-src\bindings\include;C:\Users\Usuario\1 Star\build\_deps\fmt-src\include;C:\Users\Usuario\1 Star\build\_deps\tuliphook-src\include;C:\Users\Usuario\1 Star\build\_deps\result-src\include;C:\Users\Usuario\1 Star\build\_deps\json-src\include;C:\Users\Usuario\1 Star\build\_deps\nontype_functional-src\include;C:\Users\Usuario\1 Star\build\_deps\asp2-src\include;C:\Users\Usuario\1 Star\build\_deps\arc-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\1 Star\build\geode-deps;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\cocos\include;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\cocos\extensions;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\fmod;C:\Users\Usuario\1 Star\build\bindings\bindings;C:\Users\Usuario\1 Star\build\_deps\bindings-src\bindings\include;C:\Users\Usuario\1 Star\build\_deps\fmt-src\include;C:\Users\Usuario\1 Star\build\_deps\tuliphook-src\include;C:\Users\Usuario\1 Star\build\_deps\result-src\include;C:\Users\Usuario\1 Star\build\_deps\json-src\include;C:\Users\Usuario\1 Star\build\_deps\nontype_functional-src\include;C:\Users\Usuario\1 Star\build\_deps\asp2-src\include;C:\Users\Usuario\1 Star\build\_deps\arc-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\link\win64\libcocos2d.lib;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\link\win64\libExtensions.lib;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\link\win64\glew32.lib;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\link\win64\fmod.lib;opengl32.lib;delayimp.lib;ws2_32.lib;bindings\MinSizeRel\GeodeBindings.lib;_deps\arc-build\MinSizeRel\arc.lib;_deps\asp2-build\MinSizeRel\asp.lib;_deps\fmt-build\MinSizeRel\fmt.lib;C:\Users\Usuario\AppData\Local\GeodeSDK\bin\5.6.1\Geode.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/Usuario/AppData/Local/GeodeSDK/loader/include/link;C:/Users/Usuario/AppData/Local/GeodeSDK/loader/include/link/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/Usuario/1 Star/build/MinSizeRel/sarbelfcb.1-star.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/Usuario/1 Star/build/MinSizeRel/sarbelfcb.1-star.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\1 Star\build\geode-deps;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\cocos\include;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\cocos\extensions;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\fmod;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/Usuario/1 Star/build/bindings/bindings" /external:I "C:/Users/Usuario/1 Star/build/_deps/bindings-src/bindings/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/fmt-src/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/tuliphook-src/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/result-src/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/json-src/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/nontype_functional-src/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/asp2-src/include" /external:I "C:/Users/Usuario/1 Star/build/_deps/arc-src/include" /bigobj /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/Users/Usuario/1 Star/build/CMakeFiles/1Star.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>C:/Users/Usuario/1 Star/build/1Star.dir/RelWithDebInfo//cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GEODE_MOD_ID="sarbelfcb.1-star";PROJECT_NAME=1Star;NOMINMAX;GEODE_GD_VERSION=2.2081;GEODE_COMP_GD_VERSION=22081;GEODE_GD_VERSION_STRING="2.2081";_HAS_ITERATOR_DEBUGGING=0;MAT_JSON_DYNAMIC=1;ARC_FEATURE_TIME=1;CMAKE_INTDIR="RelWithDebInfo";_1Star_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GEODE_MOD_ID=\"sarbelfcb.1-star\";PROJECT_NAME=1Star;NOMINMAX;GEODE_GD_VERSION=2.2081;GEODE_COMP_GD_VERSION=22081;GEODE_GD_VERSION_STRING=\"2.2081\";_HAS_ITERATOR_DEBUGGING=0;MAT_JSON_DYNAMIC=1;ARC_FEATURE_TIME=1;CMAKE_INTDIR=\"RelWithDebInfo\";_1Star_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\1 Star\build\geode-deps;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\cocos\include;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\cocos\extensions;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\fmod;C:\Users\Usuario\1 Star\build\bindings\bindings;C:\Users\Usuario\1 Star\build\_deps\bindings-src\bindings\include;C:\Users\Usuario\1 Star\build\_deps\fmt-src\include;C:\Users\Usuario\1 Star\build\_deps\tuliphook-src\include;C:\Users\Usuario\1 Star\build\_deps\result-src\include;C:\Users\Usuario\1 Star\build\_deps\json-src\include;C:\Users\Usuario\1 Star\build\_deps\nontype_functional-src\include;C:\Users\Usuario\1 Star\build\_deps\asp2-src\include;C:\Users\Usuario\1 Star\build\_deps\arc-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\1 Star\build\geode-deps;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\cocos\include;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\cocos\extensions;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\Geode\fmod;C:\Users\Usuario\1 Star\build\bindings\bindings;C:\Users\Usuario\1 Star\build\_deps\bindings-src\bindings\include;C:\Users\Usuario\1 Star\build\_deps\fmt-src\include;C:\Users\Usuario\1 Star\build\_deps\tuliphook-src\include;C:\Users\Usuario\1 Star\build\_deps\result-src\include;C:\Users\Usuario\1 Star\build\_deps\json-src\include;C:\Users\Usuario\1 Star\build\_deps\nontype_functional-src\include;C:\Users\Usuario\1 Star\build\_deps\asp2-src\include;C:\Users\Usuario\1 Star\build\_deps\arc-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\link\win64\libcocos2d.lib;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\link\win64\libExtensions.lib;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\link\win64\glew32.lib;C:\Users\Usuario\AppData\Local\GeodeSDK\loader\include\link\win64\fmod.lib;opengl32.lib;delayimp.lib;ws2_32.lib;bindings\RelWithDebInfo\GeodeBindings.lib;_deps\arc-build\RelWithDebInfo\arc.lib;_deps\asp2-build\RelWithDebInfo\asp.lib;_deps\fmt-build\RelWithDebInfo\fmt.lib;C:\Users\Usuario\AppData\Local\GeodeSDK\bin\5.6.1\Geode.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/Usuario/AppData/Local/GeodeSDK/loader/include/link;C:/Users/Usuario/AppData/Local/GeodeSDK/loader/include/link/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/Usuario/1 Star/build/RelWithDebInfo/sarbelfcb.1-star.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/Usuario/1 Star/build/RelWithDebInfo/sarbelfcb.1-star.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Usuario\1 Star\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Usuario/1 Star/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\Usuario\scoop\apps\cmake\current\bin\cmake.exe "-SC:/Users/Usuario/1 Star" "-BC:/Users/Usuario/1 Star/build" --check-stamp-file "C:/Users/Usuario/1 Star/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Usuario\1 Star\build\CMakeFiles\4.3.1\CMakeCCompiler.cmake;C:\Users\Usuario\1 Star\build\CMakeFiles\4.3.1\CMakeCXXCompiler.cmake;C:\Users\Usuario\1 Star\build\CMakeFiles\4.3.1\CMakeRCCompiler.cmake;C:\Users\Usuario\1 Star\build\CMakeFiles\4.3.1\CMakeSystem.cmake;C:\Users\Usuario\1 Star\build\CMakeFiles\cmake.verify_globs;C:\Users\Usuario\1 Star\mod.json;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeCInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeCXXInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeGenericSystem.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeInitializeConfigs.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeLanguageInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeRCInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Compiler\MSVC-C.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Compiler\MSVC.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Linker\MSVC-C.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Linker\MSVC-CXX.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Linker\MSVC.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Windows-Initialize.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Windows-MSVC.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Windows.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Usuario\1 Star\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Usuario/1 Star/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\Usuario\scoop\apps\cmake\current\bin\cmake.exe "-SC:/Users/Usuario/1 Star" "-BC:/Users/Usuario/1 Star/build" --check-stamp-file "C:/Users/Usuario/1 Star/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Usuario\1 Star\build\CMakeFiles\4.3.1\CMakeCCompiler.cmake;C:\Users\Usuario\1 Star\build\CMakeFiles\4.3.1\CMakeCXXCompiler.cmake;C:\Users\Usuario\1 Star\build\CMakeFiles\4.3.1\CMakeRCCompiler.cmake;C:\Users\Usuario\1 Star\build\CMakeFiles\4.3.1\CMakeSystem.cmake;C:\Users\Usuario\1 Star\build\CMakeFiles\cmake.verify_globs;C:\Users\Usuario\1 Star\mod.json;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeCInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeCXXInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeGenericSystem.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeInitializeConfigs.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeLanguageInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeRCInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Compiler\MSVC-C.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Compiler\MSVC.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Linker\MSVC-C.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Linker\MSVC-CXX.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Linker\MSVC.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Windows-Initialize.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Windows-MSVC.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Windows.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Usuario\1 Star\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Usuario/1 Star/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Users\Usuario\scoop\apps\cmake\current\bin\cmake.exe "-SC:/Users/Usuario/1 Star" "-BC:/Users/Usuario/1 Star/build" --check-stamp-file "C:/Users/Usuario/1 Star/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Usuario\1 Star\build\CMakeFiles\4.3.1\CMakeCCompiler.cmake;C:\Users\Usuario\1 Star\build\CMakeFiles\4.3.1\CMakeCXXCompiler.cmake;C:\Users\Usuario\1 Star\build\CMakeFiles\4.3.1\CMakeRCCompiler.cmake;C:\Users\Usuario\1 Star\build\CMakeFiles\4.3.1\CMakeSystem.cmake;C:\Users\Usuario\1 Star\build\CMakeFiles\cmake.verify_globs;C:\Users\Usuario\1 Star\mod.json;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeCInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeCXXInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeGenericSystem.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeInitializeConfigs.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeLanguageInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeRCInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Compiler\MSVC-C.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Compiler\MSVC.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Linker\MSVC-C.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Linker\MSVC-CXX.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Linker\MSVC.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Windows-Initialize.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Windows-MSVC.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Windows.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Usuario\1 Star\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Usuario/1 Star/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Users\Usuario\scoop\apps\cmake\current\bin\cmake.exe "-SC:/Users/Usuario/1 Star" "-BC:/Users/Usuario/1 Star/build" --check-stamp-file "C:/Users/Usuario/1 Star/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Usuario\1 Star\build\CMakeFiles\4.3.1\CMakeCCompiler.cmake;C:\Users\Usuario\1 Star\build\CMakeFiles\4.3.1\CMakeCXXCompiler.cmake;C:\Users\Usuario\1 Star\build\CMakeFiles\4.3.1\CMakeRCCompiler.cmake;C:\Users\Usuario\1 Star\build\CMakeFiles\4.3.1\CMakeSystem.cmake;C:\Users\Usuario\1 Star\build\CMakeFiles\cmake.verify_globs;C:\Users\Usuario\1 Star\mod.json;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeCInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeCXXInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeGenericSystem.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeInitializeConfigs.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeLanguageInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeRCInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Compiler\MSVC-C.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Compiler\MSVC.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Linker\MSVC-C.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Linker\MSVC-CXX.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Linker\MSVC.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Windows-Initialize.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Windows-MSVC.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\Windows.cmake;C:\Users\Usuario\scoop\apps\cmake\current\share\cmake-4.3\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Usuario\1 Star\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Usuario\1 Star\build\CMakeFiles\1Star.dir\cmake_pch.cxx">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Usuario/1 Star/build/CMakeFiles/1Star.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Usuario/1 Star/build/CMakeFiles/1Star.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Usuario/1 Star/build/1Star.dir/Debug//cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Usuario/1 Star/build/CMakeFiles/1Star.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Usuario/1 Star/build/CMakeFiles/1Star.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Usuario/1 Star/build/1Star.dir/Release//cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Usuario/1 Star/build/CMakeFiles/1Star.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Usuario/1 Star/build/CMakeFiles/1Star.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Usuario/1 Star/build/1Star.dir/MinSizeRel//cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Usuario/1 Star/build/CMakeFiles/1Star.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Usuario/1 Star/build/CMakeFiles/1Star.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Usuario/1 Star/build/1Star.dir/RelWithDebInfo//cmake_pch.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usuario\1 Star\src\main.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Usuario/1 Star/build/CMakeFiles/1Star.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Usuario/1 Star/build/CMakeFiles/1Star.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Usuario/1 Star/build/CMakeFiles/1Star.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Usuario/1 Star/build/CMakeFiles/1Star.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="C:\Users\Usuario\1 Star\build\CMakeFiles\1Star.dir\Debug\cmake_pch.hxx" />
+    <ClInclude Include="C:\Users\Usuario\1 Star\build\CMakeFiles\1Star.dir\Release\cmake_pch.hxx" />
+    <ClInclude Include="C:\Users\Usuario\1 Star\build\CMakeFiles\1Star.dir\MinSizeRel\cmake_pch.hxx" />
+    <ClInclude Include="C:\Users\Usuario\1 Star\build\CMakeFiles\1Star.dir\RelWithDebInfo\cmake_pch.hxx" />
+    <ClCompile Include="C:\Users\Usuario\AppData\Local\GeodeSDK\entry.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Usuario/1 Star/build/CMakeFiles/1Star.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Usuario/1 Star/build/CMakeFiles/1Star.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Usuario/1 Star/build/CMakeFiles/1Star.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Usuario/1 Star/build/CMakeFiles/1Star.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="C:\Users\Usuario\1 Star\build\_deps\nontype_functional-src\include\std23\function_ref.h" />
+    <ClInclude Include="C:\Users\Usuario\1 Star\build\_deps\nontype_functional-src\include\std23\function.h" />
+    <ClInclude Include="C:\Users\Usuario\1 Star\build\_deps\nontype_functional-src\include\std23\move_only_function.h" />
+    <ClInclude Include="C:\Users\Usuario\1 Star\build\_deps\nontype_functional-src\include\std23\__functional_base.h" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Usuario\1 Star\build\ZERO_CHECK.vcxproj">
+      <Project>{643B83A2-0F51-347B-857D-A0E0AA07CEFC}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\1 Star\build\bindings\GeodeBindings.vcxproj">
+      <Project>{0321E27B-4DAF-3F4E-ABEE-EBFB473D9E23}</Project>
+      <Name>GeodeBindings</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\1 Star\build\_deps\arc-build\arc.vcxproj">
+      <Project>{F0BA88D6-EF73-3E78-8885-FAE6BEE964C1}</Project>
+      <Name>arc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\1 Star\build\_deps\asp2-build\asp.vcxproj">
+      <Project>{0E9B0275-DEAE-39E5-B7AC-CC90EADE9D5E}</Project>
+      <Name>asp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\1 Star\build\_deps\fmt-build\fmt.vcxproj">
+      <Project>{8EABC660-F2BA-3B5A-8494-D2120FDFE30C}</Project>
+      <Name>fmt</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
